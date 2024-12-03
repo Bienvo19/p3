@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterfly Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Butterfly Tracker</h1>
+        <p>Registra y gestiona tus mariposas favoritas</p>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Registrar Mariposa</h2>
+            <form id="butterflyForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Ej: Monarca" required>
+                
+                <label for="description">Descripción:</label>
+                <textarea id="description" placeholder="Añade una breve descripción" required></textarea>
+                
+                <label for="image">URL de Imagen:</label>
+                <input type="url" id="image" placeholder="https://example.com/mariposa.jpg" required>
+                
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section class="list-section">
+            <h2>Mariposas Registradas</h2>
+            <div id="butterflyList" class="butterfly-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Butterfly Tracker - Todos los derechos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
